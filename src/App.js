@@ -1,33 +1,27 @@
-import React from 'react';
-import './App.css';
-import Input from './components/Input';
-import TodoItem from './components/TodoItem';
-import { useSelector} from "react-redux"
-import {selectTodoList} from "./features/todoSlice"
-
-
+import React from "react";
+import "./App.css";
+import Input from "./components/Input";
+import TodoItem from "./components/TodoItem";
+import { useSelector } from "react-redux";
+import { selectTodoList } from "./features/todoSlice";
 
 function App() {
-  const todoList = useSelector(selectTodoList)
+  const todoList = useSelector(selectTodoList);
   return (
-    <div className="App">
+    <div className="app">
       <div className="app_container">
         <div className="app_todoContainer">
-
-{
-  todoList.map(item => (
-    <TodoItem
-     name={item.item}
-     done={item.done}
-     id={item.id}
-     />
-  ))
-}
+          { todoList.map((item) => (
+            <TodoItem
+             name={item.item}
+            done={item.done}
+            id={item.id} 
+            />
+          ))
+          }
         </div>
-<Input />
-
+        <Input />
       </div>
-
     </div>
   );
 }
