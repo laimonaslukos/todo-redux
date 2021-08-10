@@ -1,3 +1,10 @@
+## Egzample 
+
+![Screenshot 2021-08-10 at 11-57-03 React Redux App](https://user-images.githubusercontent.com/79200136/128838682-b911359c-d55a-4cc8-9457-1e7410df712b.png)
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
